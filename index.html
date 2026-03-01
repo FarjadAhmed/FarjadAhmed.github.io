@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farjad Ahmed — Data Scientist</title>
+    <meta name="description" content="Data Scientist at HelloFresh SE. Delivering Bayesian MMM models for €1B+ marketing spend across 18 markets.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">FA<span class="accent">.</span></a>
+            <div class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting reveal">Hello, I'm</p>
+            <h1 class="hero-name reveal">Farjad Ahmed</h1>
+            <div class="hero-title-wrapper reveal">
+                <span class="hero-title-static">I build </span>
+                <span class="hero-title-typed" id="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description reveal">
+                Data Scientist at HelloFresh SE, Berlin — delivering Bayesian MMM models for €1B+ marketing
+                spend across 18 markets, with a research background in transformer optimization.
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <button id="resume-btn" class="btn btn-outline">
+                    <i class="fa-solid fa-download"></i> Resume
+                </button>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="18">0</span>
+                    <span class="stat-label">Markets Optimized</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="1">0</span><span class="stat-suffix">B€+</span>
+                    <span class="stat-label">Spend Modeled</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a Data Scientist with a research background in <strong>transformer optimization</strong>
+                        and hands-on experience building <strong>Bayesian Marketing Mix Models</strong> at scale.
+                        Currently at <strong>HelloFresh SE</strong> in Berlin, I deliver hierarchical MMM models
+                        using PyMC for <strong>€1B+</strong> marketing spend across <strong>18</strong> global markets.
+                    </p>
+                    <p>
+                        My Master's thesis at the University of Hildesheim focused on building robust and compact
+                        transformers for dense prediction tasks, achieving a <strong>17% parameter reduction</strong>
+                        in Conditional DETR while maintaining competitive performance on COCO.
+                    </p>
+                    <p>
+                        I thrive at the intersection of rigorous statistical modeling and production engineering,
+                        from prior/posterior analysis and lift test calibration to Airflow pipelines and
+                        Databricks deployments.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Berlin, Germany</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fa-solid fa-language"></i>
+                            <span>English C1 · Deutsch A2</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>MSc Data Analytics (GPA 1.6 / 5.0)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal">
+                    <div class="about-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <h3>What I Do</h3>
+                            <ul>
+                                <li>Bayesian Marketing Mix Modeling</li>
+                                <li>Computer Vision & Transformers</li>
+                                <li>Hierarchical Statistical Models</li>
+                                <li>Production ML Pipelines</li>
+                                <li>Data-Driven Attribution</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">02.</span> Projects
+            </h2>
+            <h3 class="projects-subtitle reveal">Featured Work</h3>
+            <div class="projects-featured-grid" id="featured-projects"></div>
+            <h3 class="projects-subtitle reveal">More Projects</h3>
+            <div class="projects-grid" id="more-projects"></div>
+            <div class="projects-cta reveal">
+                <a href="https://github.com/FarjadAhmed" target="_blank" class="btn btn-outline">
+                    <i class="fa-brands fa-github"></i> View All on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">03.</span> Experience
+            </h2>
+            <div class="timeline">
+                <!-- HelloFresh - Data Scientist -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Data Scientist</h3>
+                                <p class="timeline-company">HelloFresh SE</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jan 2025 — Present</span>
+                                <span class="timeline-location">Berlin, Germany</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed and maintained hierarchical MMM models using PyMC for global optimization across 18 markets (€1B+ annual spend), tuning parameters and saturation curves through systematic prior/posterior fitting analysis</li>
+                            <li>Monthly FIRM forecast delivery for MMM model across all entities and markets, coordinating staging validation, lift test calibration, and production deployment</li>
+                            <li>Designed data-driven attribution (DDA) baseline using custom weighted attribution methodology (campaign-level cost, impressions, clicks, conversion ratios)</li>
+                            <li>Integrated Lift Test calibration into MMM model, increasing stakeholder confidence and aligning predictions closer to ground truth</li>
+                            <li>Onboarded new Data Science team members and trained them on the MMM model and data-driven attribution methodology</li>
+                            <li>Evaluated alternative MMM architectures (hierarchical vs flat) using systematic hyperparameter optimization with Optuna to improve lift test calibration and inform architectural decisions</li>
+                            <li>Proposed architectural review, improvements transitioning from sequential to joint parameter estimation, reducing model instability and addressing lift test propagation issues; documented model assumptions, edge cases, and architectural trade-offs</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">PyMC</span>
+                            <span class="tag">Bayesian</span>
+                            <span class="tag">Airflow</span>
+                            <span class="tag">Optuna</span>
+                            <span class="tag">Databricks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HelloFresh - Intern -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Data Science Intern</h3>
+                                <p class="timeline-company">HelloFresh SE</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Aug 2023 — Dec 2024</span>
+                                <span class="timeline-location">Berlin, Germany</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Redesigned Streamlit dashboard for Media-Mix Conversions Model serving 16 markets, improving ease of use and user-driven insight visibility</li>
+                            <li>Conducted ad-hoc analyses on customer acquisition costs, activation predictions, and adstock priors</li>
+                            <li>Fine-tuned model priors using cross-market analysis and optimization, achieving &lt;10% error between predicted and test values</li>
+                            <li>Onboarded new markets through exploratory data analysis and model prior optimization</li>
+                            <li>Maintained the model in production alongside a senior data scientist</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">MMM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HelloFresh - PM -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Data Product Manager (Werkstudent)</h3>
+                                <p class="timeline-company">HelloFresh SE</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Aug 2022 — Aug 2023</span>
+                                <span class="timeline-location">Berlin, Germany</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Led Dimensions Modernization initiative for foundational fact and dimension tables used company-wide across all business units</li>
+                            <li>Conducted customer discovery interviews, PRD documentation, and legacy asset deprecation</li>
+                            <li>Conducted sprint reviews and maintained data asset documentation in Global Business Intelligence (GBI)</li>
+                            <li>Coordinated cross-functional teams for data product development and deployment</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Product</span>
+                            <span class="tag">Data</span>
+                            <span class="tag">Agile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Astera -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Associate Product Manager</h3>
+                                <p class="timeline-company">Astera Software</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jul 2021 — Feb 2022</span>
+                                <span class="timeline-location">Karachi, Pakistan</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Led team of 3 developers and 1 QA engineer for data preparation tool product development</li>
+                            <li>Led sprint plannings, reviews and project demonstrations alongside product research</li>
+                            <li>Devised a proprietary scripting language for data cleansing, integrated with the product for data transformation and cleansing</li>
+                            <li>Designed data cleansing components, UX and UI for the product</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Product Dev</span>
+                            <span class="tag">UX/UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Data Integration & QA Engineer</h3>
+                                <p class="timeline-company">Astera Software</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Sep 2020 — Jul 2021</span>
+                                <span class="timeline-location">Karachi, Pakistan</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed automated and manual test cases for quality assurance, covering functional, regression, and system testing</li>
+                            <li>Conducted data validation of ETL pipelines and reporting outputs, identifying and resolving issues with developers</li>
+                            <li>Created R, Stata, and Python scripts for machine learning and statistical analysis components</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">R</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Stata</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">04.</span> Technical Arsenal
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Bayesian & Statistics</h3>
+                    <div class="skill-items">
+                        <span>PyMC</span>
+                        <span>Hierarchical Models</span>
+                        <span>MMM</span>
+                        <span>Prior/Posterior Analysis</span>
+                        <span>Lift Test Calibration</span>
+                        <span>ArviZ</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3>Computer Vision & DL</h3>
+                    <div class="skill-items">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>DETR / Conditional DETR</span>
+                        <span>Vision Transformers</span>
+                        <span>Multi-Head Attention</span>
+                        <span>OpenCV</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <span>Python</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                        <span>PyCaret</span>
+                        <span>C/C++</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Data Engineering & MLOps</h3>
+                    <div class="skill-items">
+                        <span>PySpark</span>
+                        <span>Databricks</span>
+                        <span>Airflow DAG Management</span>
+                        <span>Multi-Stage ETL Pipelines</span>
+                        <span>AWS S3</span>
+                        <span>Staging/Live Deployment</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>Research & Optimization</h3>
+                    <div class="skill-items">
+                        <span>Model Optimization</span>
+                        <span>Parameter Reduction</span>
+                        <span>Ablation Studies</span>
+                        <span>Gradient Analysis</span>
+                        <span>Hyperparameter Optimization</span>
+                        <span>COCO API</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Data & Analytics</h3>
+                    <div class="skill-items">
+                        <span>SQL</span>
+                        <span>EDA</span>
+                        <span>A/B Testing</span>
+                        <span>Time Series</span>
+                        <span>NLP</span>
+                        <span>Big Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section" id="research">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">05.</span> Research
+            </h2>
+            <div class="research-featured reveal">
+                <div class="research-card">
+                    <div class="research-badge">Master's Thesis</div>
+                    <h3>Building Robust and Compact Transformers for Dense Prediction Tasks</h3>
+                    <p class="research-subtitle">University of Hildesheim · 2023 — 2024</p>
+                    <p class="research-description">
+                        Implemented Dynamically Composable Multi-Head Attention (DCMHA) in Conditional DETR
+                        for object detection. Designed a custom 5-branch attention head composition architecture
+                        with shared feedforward networks, achieving <strong>17% parameter reduction</strong>
+                        while maintaining competitive performance
+                        (<strong>AP50:95: 39.3</strong> vs 39.2 baseline on COCO).
+                    </p>
+                    <div class="research-highlights">
+                        <div class="highlight">
+                            <span class="highlight-number">17%</span>
+                            <span class="highlight-label">Parameter Reduction</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">39.3</span>
+                            <span class="highlight-label">AP50:95 on COCO</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">5</span>
+                            <span class="highlight-label">Branch Architecture</span>
+                        </div>
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Conditional DETR</span>
+                        <span class="tag">Vision Transformers</span>
+                        <span class="tag">DCMHA</span>
+                        <span class="tag">COCO</span>
+                        <span class="tag">Pascal VOC</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1GnUOExobPvWMBk13abw8NAQqWQ24Eyum/view?usp=sharing" target="_blank" class="btn btn-outline btn-sm">
+                        <i class="fa-solid fa-file-pdf"></i> Read Thesis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt" id="education">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">06.</span> Education
+            </h2>
+            <div class="education-grid">
+                <div class="education-card reveal">
+                    <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+                    <h3>Master of Science in Data Analytics</h3>
+                    <p class="edu-school">University of Hildesheim</p>
+                    <p class="edu-date">Apr 2022 — Dec 2024 · Hildesheim, Germany</p>
+                    <p class="edu-gpa">GPA: 1.6 / 5.0 (German) ≈ 3.7 / 4.0 (US)</p>
+                    <div class="edu-courses">
+                        <span>Advanced Computer Vision</span>
+                        <span>Advanced ML</span>
+                        <span>NLP</span>
+                        <span>Optimization</span>
+                        <span>Big Data Analytics</span>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+                    <h3>Bachelor of Science in Electrical Engineering</h3>
+                    <p class="edu-school">Habib University</p>
+                    <p class="edu-date">Aug 2015 — Jun 2019 · Karachi, Pakistan</p>
+                    <p class="edu-thesis">Thesis: "Multi-Agent Robotics Teaching and Research Platform"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">07.</span> Get in Touch
+            </h2>
+            <div class="contact-content reveal">
+                <p class="contact-text">
+                    I'm always open to discussing data science, Bayesian modeling, research opportunities,
+                    or just connecting. Feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/ahmedfarjad/" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>linkedin.com/in/ahmedfarjad</span>
+                    </a>
+                    <a href="https://github.com/FarjadAhmed" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <span>github.com/FarjadAhmed</span>
+                    </a>
+                </div>
+                <a href="https://www.linkedin.com/in/ahmedfarjad/" target="_blank" class="btn btn-primary btn-lg">
+                    <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="modal-overlay">
+        <div class="modal">
+            <button id="modal-close" class="modal-close">&times;</button>
+            <h3 class="modal-title">Get My Resume</h3>
+            <p class="modal-text">Enter your email and I'll send you my latest resume.</p>
+            <form id="resume-form" action="https://formspree.io/f/xeelwevg" method="POST">
+                <input type="hidden" name="_subject" value="Resume Request from Portfolio">
+                <input type="email" name="email" class="modal-input" placeholder="your@email.com" required>
+                <button type="submit" class="btn btn-primary modal-submit">
+                    <i class="fa-solid fa-paper-plane"></i> Request Resume
+                </button>
+            </form>
+            <div id="modal-success" class="modal-success" style="display: none;">
+                <i class="fa-solid fa-check-circle"></i>
+                <p>Thanks! I'll send my resume to your email shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by Farjad Ahmed</p>
+            <div class="footer-links">
+                <a href="https://github.com/FarjadAhmed" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmedfarjad/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

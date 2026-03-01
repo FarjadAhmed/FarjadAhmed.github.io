@@ -1,0 +1,106 @@
+{
+  "featured": [
+      {
+        "name": "LocalChatbox",
+        "description": "On-device LLM chat app for iOS using Apple MLX with Metal GPU acceleration.",
+        "github": "https://github.com/FarjadAhmed/LocalChatbox",
+        "tags": ["Swift", "MLX", "iOS"]
+      },
+      {
+        "name": "AI Inception Experiment",
+        "description": "What happens when an AI pretends to be human and directs another AI to write code.",
+        "github": "https://github.com/FarjadAhmed/ai-inception-experiment",
+        "tags": ["JavaScript", "AI", "Experiment"]
+      },
+      {
+        "name": "Hierarchical MMM Research",
+        "description": "Testing cascading top-down MMM attribution against simulated ground truth with PyMC-Marketing.",
+        "github": "https://github.com/FarjadAhmed/MMM_Research",
+        "tags": ["PyMC-Marketing", "Bayesian", "MMM"]
+      },
+      {
+        "name": "Chronos AI",
+        "description": "Time series forecasting platform with multi-model ensemble predictions.",
+        "github": "https://github.com/FarjadAhmed/chronos-ai",
+        "tags": ["Jupyter Notebook", "Forecasting", "Ensemble"]
+      },
+      {
+        "name": "TearSpace",
+        "description": "iOS application built with Swift.",
+        "github": "https://github.com/FarjadAhmed/TearSpace",
+        "tags": ["Swift", "iOS"]
+      },
+    {
+      "name": "Deventory",
+      "description": "iOS inventory management app for dental clinics with barcode scanning and Supabase backend.",
+      "github": "https://github.com/FarjadAhmed/deventory",
+      "tags": ["Swift", "Supabase", "iOS"]
+    },
+    {
+      "name": "Reddit Text",
+      "description": "Python CLI for scraping subreddit posts and hierarchical comments.",
+      "github": "https://github.com/FarjadAhmed/reddit-text",
+      "tags": ["Python", "CLI", "Scraping"]
+    },
+    {
+      "name": "StarScope",
+      "description": "iOS astrology app with animated celestial UI and horoscope API integration.",
+      "github": "https://github.com/FarjadAhmed/StarScope",
+      "tags": ["Swift", "API", "iOS"],
+      "hidden":true
+    },
+    {
+      "name": "CurveTech",
+      "description": "Web application built with TypeScript and deployed on Vercel.",
+      "github": "https://github.com/FarjadAhmed/curvetech",
+      "live": "https://curvetech.vercel.app",
+      "tags": ["TypeScript", "Vercel", "Web"],
+      "hidden": true
+    },
+    {
+      "name": "Stocks Screener",
+      "description": "iOS stock market screener for 12 countries with ranked performance data.",
+      "github": "https://github.com/FarjadAhmed/stocksScreener",
+      "tags": ["Swift", "Finance", "iOS"]
+    }
+  ],
+  "more": [
+      {
+        "name": "DoxAI",
+        "description": "Multi-agent medical diagnostic system with cost-optimized sequential reasoning.",
+        "github": "https://github.com/FarjadAhmed/doxai",
+        "tags": ["Python", "Multi-Agent", "AI"]
+      },
+
+    {
+      "name": "Deep Learning Coursera",
+      "description": "Complete implementations from the Deep Learning Specialization — neural networks, CNNs, sequence models, and optimization techniques.",
+      "github": "https://github.com/FarjadAhmed/Deep-Learning-Coursera",
+      "tags": ["Jupyter Notebook", "Deep Learning", "Python"]
+    },
+    {
+      "name": "Distributed Data Analytics",
+      "description": "Coursework on distributed computing and large-scale data analytics — MapReduce patterns, parallel processing, and scalable ML.",
+      "github": "https://github.com/FarjadAhmed/Distributed-Data-Analytics",
+      "tags": ["Jupyter Notebook", "Big Data", "Distributed"]
+    },
+    {
+      "name": "Machine Learning Lab",
+      "description": "Hands-on lab coursework covering supervised and unsupervised learning — classification, regression, clustering, and model evaluation.",
+      "github": "https://github.com/FarjadAhmed/Machine_Learning_Lab",
+      "tags": ["Jupyter Notebook", "ML", "Scikit-learn"]
+    },
+    {
+      "name": "Natural Language Processing",
+      "description": "NLP coursework implementations — text classification, tokenization, embeddings, and language modeling techniques.",
+      "github": "https://github.com/FarjadAhmed/Natural-Language-Processing",
+      "tags": ["NLP", "Python", "Transformers"]
+    },
+    {
+      "name": "Machine Learning Coursera",
+      "description": "Andrew Ng's Machine Learning course — linear/logistic regression, neural networks, SVMs, and anomaly detection in MATLAB.",
+      "github": "https://github.com/FarjadAhmed/Machine-Learning-Coursera",
+      "tags": ["MATLAB", "ML", "Stanford"]
+    }
+  ]
+}
