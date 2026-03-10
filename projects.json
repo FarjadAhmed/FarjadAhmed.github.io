@@ -1,6 +1,12 @@
 {
   "featured": [
       {
+        "name": "agentwatch",
+        "description": "Flight recorder for Claude Code sessions. Logs every action, flags dangerous commands, and generates reports.",
+        "github": "https://github.com/FarjadAhmed/agentwatch",
+        "tags": ["Node.js", "CLI", "Security"]
+      },
+      {
         "name": "LocalChatbox",
         "description": "On-device LLM chat app for iOS using Apple MLX with Metal GPU acceleration.",
         "github": "https://github.com/FarjadAhmed/LocalChatbox",
