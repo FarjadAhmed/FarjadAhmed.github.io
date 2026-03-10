@@ -165,18 +165,23 @@
         const card = document.createElement('a');
         card.href = project.github;
         card.target = '_blank';
-        card.className = featured ? 'project-card project-card-featured reveal' : 'project-card reveal';
+        let classes = featured ? 'project-card project-card-featured reveal' : 'project-card reveal';
+        if (project.starred) classes += ' project-card-starred';
+        card.className = classes;
 
         let linksHtml = `<span class="project-link"><i class="fa-brands fa-github"></i></span>`;
         if (project.live) {
             linksHtml += `<span class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>`;
         }
 
+        const starBadge = project.starred ? '<span class="project-star-badge"><i class="fa-solid fa-star"></i> Top Project</span>' : '';
+
         card.innerHTML = `
             <div class="project-card-header">
                 <i class="fa-solid fa-folder-open project-icon"></i>
                 <div class="project-header-links">${linksHtml}</div>
             </div>
+            ${starBadge}
             <h3>${project.name}</h3>
             <p>${project.description}</p>
             <div class="project-tags">${project.tags.map(t => `<span>${t}</span>`).join('')}</div>

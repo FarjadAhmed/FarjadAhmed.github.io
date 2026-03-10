@@ -4,7 +4,8 @@
         "name": "agentwatch",
         "description": "Flight recorder for Claude Code sessions. Logs every action, flags dangerous commands, and generates reports.",
         "github": "https://github.com/FarjadAhmed/agentwatch",
-        "tags": ["Node.js", "CLI", "Security"]
+        "tags": ["Node.js", "CLI", "Security"],
+        "starred": true
       },
       {
         "name": "LocalChatbox",
