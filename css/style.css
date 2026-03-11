@@ -1041,10 +1041,7 @@ a.project-card {
 }
 
 .project-card-starred .project-icon {
-    background: linear-gradient(135deg, #f59e0b, #fbbf24) !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f59e0b !important;
 }
 
 .project-star-badge {
